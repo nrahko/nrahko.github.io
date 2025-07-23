@@ -35,7 +35,6 @@ header {
   padding-top: 20px;
   padding-bottom: 10px;
   /* border-bottom: 2.5px solid rgba(0, 0, 0, 0.418); */
-
 }
 nav a.navbutton {
     margin-left: 20px;
@@ -51,7 +50,7 @@ nav a.navbutton {
 }
 .navbutton:hover {
     background-color: #89bd88;
-    transition-duration: 1s;
+    transition-duration: .5s;
 }
 .container1 {
     /* background-color: #89bd88; */
@@ -67,6 +66,12 @@ nav a.navbutton {
     align-content: center;
     /* padding-top: 350px; */
 }
+.consultation {
+    background-image: url(images/mountainsplash.jpg);
+}
+.about {
+    background-image: url(images/aboutsplash.jpg);
+}
 h1 { 
     font-size: 2.3rem;
     color: black;
@@ -78,7 +83,7 @@ h2 {
     font-size: 2rem;
     font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 25px;
-    margin-bottom: 1rem;
+    margin-bottom: 25px;
 }
 p {
     line-height: 1.75rem;
@@ -92,17 +97,15 @@ p {
     border-radius: 10px;
     margin: auto;
     text-align: center;
-    padding: 20px 20px;
-    
+    padding: 20px 20px;   
 }
 .headerbox1 h1 {
     color: black;
     font-size: 3.5rem;
     line-height: 4rem;
     /* margin-top: .5rem; */
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     text-shadow: 5px 5px 5px #89bd88;
-
 }
 .mybutton {
     background-color: #cfe1e5;
@@ -112,16 +115,18 @@ p {
     border-radius: 12px;
     box-shadow: 0px 2px 2px black;
     font-size: 1.125rem;
+    
 }
 .mybutton:hover {
     background-color: #89bd88;
-    transition-duration: 1s;
+    transition-duration: .5s;
 }
 a.mybutton {
     display: inline-block;
     margin-top: 20px;
     margin-bottom: 20px;
     text-decoration: none;
+    text-align: center;
 }
 .container2 {
     /* background-color: rgb(49, 177, 59); */
@@ -139,15 +144,12 @@ a.mybutton {
     flex: 2;
     padding-left: 10px;
     padding-top: 20px;
-
 }
-
 .herobox2 {
     width: 50%;
     /* background-color: blue; */
     flex: 1;
     text-align: right;
-
 }
 ul {
   list-style-type: circle;
@@ -190,8 +192,7 @@ b {
     padding-bottom: 0px;
     margin-bottom: 50px;
     align-items: center;
-    margin: auto;
-    
+    margin: auto;    
 }
 .card1 {
     /* background-color: azure; */
@@ -226,7 +227,6 @@ b {
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
-
 .subcard1 {
     background-color: azure;
     color:black;
@@ -306,7 +306,6 @@ i {
     font-size: 4rem;
     line-height: 4.5rem;
     box-sizing: border-box;
-
 }
 .container4 p {
     text-align: right;
@@ -393,17 +392,147 @@ i {
     color:#89bd88;
     font-weight: bold;
 } 
+.container8 {
+    max-width: 1024px;
+    border: solid 3.5px black;
+    border-radius: 20px;
+    background-image: url(images/eblackdiamondEback2.png);
+    background-size: cover;
+    background-position: center; 
+    min-height: 500px;
+    margin: 20px auto;
+    padding: 10px;
+}
+form {
+    margin: 10px 0px;
+    padding-left: 25px;
+    
+}
+.inputwrapper {
+    /* background-color: beige; */
+    max-width: 768px;
+    margin: 20px auto;
+}
+input[type=text], input[type=email], textarea {
+    padding: 12px 20px;
+    width: 75%;
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.newline {
+    display: block;
+    margin-bottom: 10px;
+}
+.margin-right-a {
+    margin-right: 50px;
+}
+.margin-right-b {
+    margin-right: 15px;
+}
+.margin-right-c {
+    margin-right: 25px;
+}
+td {
+    padding: 5px;
+
+}
+.container9 {
+    background-color: azure;
+    max-width: 1280px;
+    min-height: 300px;
+    display: flex;
+    /* align-items: center; */
+    /* margin-left:auto; */
+    /* margin-right:auto; */
+    border: solid 8px black;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 40px;
+
+}
+.aboutbox1 {
+    /* background-color: azure; */
+    width: 50%; 
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    /* margin: 5px; */
+}
+
+.aboutbox2 {
+    background-image: url(images/affordableprice.jpg);
+    background-size: cover;
+    width: 50%;
+    
+    /* margin: 1px;    */
+}
+.container10 {
+    background-color: azure;
+    max-width: 1280px;
+    min-height: 300px;
+    display: flex;
+    /* align-items: center; */
+    /* margin-left:auto; */
+    /* margin-right:auto; */
+    border: solid 8px black;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.aboutbox3 {
+    background-image: url(images/reliablepartner.jpg);
+    background-size: cover;
+    width: 50%;
+    /* margin: 5px; */
+}
+.aboutbox4 {
+    /* background-color: azure; */
+    width: 50%; 
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-top: 5px;
+    /* margin: 1px;    */
+}
+.aboutbox5 {
+    background-image: url(images/autonomy.jpg);
+    background-size: cover;
+    width: 50%;
+    /* margin: 1px;    */
+}
+.container9 h1 {
+    text-align: center;
+    color: #aa1f24c0;
+    /* font-weight: bold; */
+}
+.container10 h1 {
+    text-align: center;
+    color: #aa1f24c0;
+    /* font-weight: bold; */
+}
 .footerbox1 {
     /* background-color: aquamarine; */
     width: 60%;
-}  
+} 
+.footerbox1 i {
+    font-size: 2rem;
+    padding-top: 25px;
+    color: black;
+} 
+a.email{
+    color: #aa1f24c0;
+    text-decoration: none;
+}
+a.email:hover {
+    text-decoration: underline;
+}
 .footerbox2 {
     width: 40%;
     /* background-color: beige; */
     margin: auto;
     /* text-align: right; */
 }
-
 .footerbox2 img {
   width: 100%;
   height: auto;
@@ -418,6 +547,40 @@ i {
     padding: 20px;
 }
 
+/* About View */
+@media (max-width: 900px) {
+    
+    .container9 {
+        display: block;
+    
+    }
+    .container10 {
+        display: block;
+    }
+    .aboutbox1 {
+        width: 100%;
+        min-height: 450px;
+    }
+    .aboutbox2 {
+        width: 100%;
+        min-height: 450px;
+    }
+    .aboutbox3 {
+        width: 100%;
+        min-height: 450px;
+
+    }
+    .aboutbox4 {
+        width: 100%;
+        min-height: 450px;
+    
+    }
+       .aboutbox5 {
+        width: 100%;
+        min-height: 450px;
+    
+    }
+}
 /* Tablet View */
 @media (max-width: 768px) {
     
@@ -453,75 +616,66 @@ i {
             text-align: center;
             padding-top: 10px;
         }
-    
         nav a.navbutton {
-            margin-left: 0px;
-            
+            margin-left: 0px;  
         }
-    
         .headline h1 {
             font-size: 3rem;
             line-height: 3.5rem;
         }
-    
         .cards {
             display: block;
-    
         }
-    
         .card1 {
             width: 75%;
             margin: auto;
         }
-    
         .card2 {
             width: 75%;
             margin: auto;
         }
-    
         .card3 {
             width: 75%;
             margin: auto;
         }
-    
         .container3 {
             display: block;
         }
-    
         .col {
             width: 48%;
             margin: auto;
             margin-top: 15px;
             margin-bottom: 30px;
         }
-    
         .container4 h1 {
             font-size: 3rem;
             line-height: 3.5rem;
             box-sizing: border-box;
         }
-    
         .col2 {
             width: 45%;
         }
-    
         .col3 {
             width: 45%;
             margin: 10px;
         }
-    
         .hide-tablet {
             display: none;
         }
-    
         h2 {
             font-size: 1.5rem;
         }
+           td {
+            font-size: smaller;
         }
+            .margin-right-b {
+            margin-right: 1px;
+        }
+     }
 /* Mobile view */
 @media (max-width: 500px) {
 
-    header {
+        header {
             display: block;
             text-align: center;
         }
@@ -529,17 +683,14 @@ i {
         nav a {
             display: block;
         }
-    
         .headerbox1 h1 {
             font-size: 1.75rem;
             line-height: 2rem;
         }
-    
         .headline h1 {
             font-size: 2.3rem;
             line-height: 3rem;
         }
-    
         .card1 {
             width: 100%;
         }
@@ -553,7 +704,7 @@ i {
         }
     
         .col {
-            width: 70%;
+            width: 80%;
         }
     
         .col h2 {
@@ -584,7 +735,12 @@ i {
         h2 {
             font-size: 1.5rem;
         }
+         td {
+            font-size: x-small;
+        }
+        .margin-right-b {
+            margin-right: 0px;
+        }
+
     }
-
-
 
