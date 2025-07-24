@@ -493,6 +493,7 @@ td {
     padding-left: 10px;
     padding-right: 15px;
     padding-top: 5px;
+
     /* margin: 1px;    */
 }
 .aboutbox5 {
@@ -551,11 +552,13 @@ a.email:hover {
 @media (max-width: 900px) {
     
     .container9 {
-        display: block;
+        /* display: block; */
+        flex-direction: column;
     
     }
     .container10 {
-        display: block;
+        /* display: block; */
+        flex-direction: column-reverse;
     }
     .aboutbox1 {
         width: 100%;
