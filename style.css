@@ -85,7 +85,7 @@ nav i {
     border-radius: 10px;
     margin: auto;
     text-align: center;
-    padding: 20px 20px; 
+    padding: 15px 20px; 
     animation-name: moveInRight;
     animation-duration: 2.5s; 
     animation-timing-function: ease-out; 
@@ -650,12 +650,15 @@ a.email:hover {
             display: block;
         }
         .headerbox1 h1 {
-            font-size: 1.75rem;
-            line-height: 2rem;
+            font-size: 1.5rem;
+            line-height: 1.75rem;
         } 
         .headline h1 {
             font-size: 2.3rem;
             line-height: 3rem;
+        }
+        .mybutton {
+            font-size: 1rem;
         }
         /* .card1 {
             width: 100%;
