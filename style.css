@@ -1,57 +1,59 @@
-/* Global View */
-
 html {
     /* height: 100%; */
     background-image: linear-gradient(azure, grey);
 }
+
 body {
-    /* background-color: #f9f9fa; */
-    /* background-image: url(images/eblackdiamondEback2.png); */
-    /* background-size: cover; */
-    /* background-repeat: repeat; */
-    /* background-position: center; */
+    background-color: rgba(0, 0, 0, 0);
     font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
     color: black;
-    font-size: 1.125rem;
+    /* font-size: 1.125rem; */
 }
-.header-container {
-  width: 100%;
-  /* background-image: url(/images/splashback.jpg); */
-  /* background-size: cover; */
-  /* background-repeat: repeat; */
-  /* background-position: center; */
-  /* background-color: grey; */
-  /* min-height: 800px; */
-  border-bottom: 2.5px solid rgba(0, 0, 0, 0.418);
-  /* position: fixed; */
+h1 { 
+    /* font-size: 2.3rem; */
+    color: black;
+    /* line-height: 3rem; */
+    /* margin-bottom: 1.5rem; */
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.192);
 }
-header {
-  /* min-height: 175px; */
-  max-width: 1280px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  /* border-bottom: 2.5px solid rgba(0, 0, 0, 0.418); */
-}
-nav a.navbutton {
-    margin-left: 20px;
-    text-decoration: none;
+/* .offcanvas img {
+    max-width: 150px;
+    width: 100%;
+} */
+/* .nav-link {
+    font-weight: 600;
+    border: solid 1px;
+
     
+} */
+.navbar-toggler:focus {
+    box-shadow: none;
+    border: solid 2px;
 }
-.navbutton {
-   border: 1px solid black;
-   padding: 11px 25px;
+
+nav .navbar-nav .nav-item a.nav-link{
+   border: 1px solid azure;
+   padding: 8px 25px; 
    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-   color: black;
-   /* margin-right: 20px; */
+   color: azure;
+   margin-right: 20px;
+   background-color: black;
+   border-radius: 999em;
+   box-shadow: 5px 5px 10px rgba(0,0,0,0.3), -5px -5px 10px rgba(255,255,255,0.5);
 }
-.navbutton:hover {
-    background-color: #89bd88;
-    transition-duration: .5s;
+
+nav .navbar-nav .nav-item a.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.678);
 }
+
+nav i {
+    color: black;
+    font-size: 1.5rem;
+}
+.offcanvas {
+    background-color: azure;
+}
+
 .container1 {
     /* background-color: #89bd88; */
     background-image: url(images/eblackdiamondsplash.jpg);
@@ -72,22 +74,8 @@ nav a.navbutton {
 .about {
     background-image: url(images/aboutsplash.jpg);
 }
-h1 { 
-    font-size: 2.3rem;
-    color: black;
-    line-height: 3rem;
-    margin-bottom: 1.5rem;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.192);
-}
-h2 {
-    font-size: 2rem;
-    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-p {
-    line-height: 1.75rem;
-    margin-bottom: 0.5rem;
+.blog {
+    background-image: url(images/blogback1.jpg);
 }
 .headerbox1 {
     background-color: azure;
@@ -97,28 +85,50 @@ p {
     border-radius: 10px;
     margin: auto;
     text-align: center;
-    padding: 20px 20px;   
+    padding: 20px 20px; 
+    animation-name: moveInRight;
+    animation-duration: 2.5s; 
+    animation-timing-function: ease-out; 
+}
+@keyframes moveInRight {
+    0% {
+        opacity: .5;
+        transform: translateX(100px);
+       
+    }
+
+    80% {
+        
+    }
+    
+    100% {
+
+        opacity: 100;
+        transform: translate(0);
+    }
 }
 .headerbox1 h1 {
     color: black;
-    font-size: 3.5rem;
-    line-height: 4rem;
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    /* font-size: 3.5rem;
+    line-height: 4rem; */
     /* margin-top: .5rem; */
     margin-bottom: 1.5rem;
     text-shadow: 5px 5px 5px #89bd88;
 }
 .mybutton {
-    background-color: #cfe1e5;
-    color: black;
+    background-color: black;
+    border: 1px solid azure;
+    color: azure;
     font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-    padding: 11px 25px;
-    border-radius: 12px;
-    box-shadow: 0px 2px 2px black;
+    padding: 8px 25px;
+    border-radius: 999em;
     font-size: 1.125rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3), -5px -5px 10px rgba(255,255,255,0.5);
     
 }
 .mybutton:hover {
-    background-color: #89bd88;
+    background-color: rgba(0, 0, 0, 0.678);
     transition-duration: .5s;
 }
 a.mybutton {
@@ -145,6 +155,10 @@ a.mybutton {
     padding-left: 10px;
     padding-top: 20px;
 }
+.herobox1 ul {
+    line-height: 1.75rem;
+}
+
 .herobox2 {
     width: 50%;
     /* background-color: blue; */
@@ -152,11 +166,14 @@ a.mybutton {
     text-align: right;
 }
 ul {
-  list-style-type: circle;
+  list-style-type: disc;
   font-size: 1rem;
   margin-left: 15px;
   margin-bottom: 10px;
-  line-height: 1.5rem;
+  line-height: 2rem;
+}
+.cardbottom ul {
+    line-height: 1.5rem;
 }
 b {
     font-weight: bold;
@@ -179,122 +196,67 @@ b {
 .headline p {
     margin-left: 20px;
     margin-right: 20px;
-    font-size: larger;
+    /* font-size: larger; */
 }
-.cards {
-    /* background-color: rgb(77, 236, 77); */
-    max-width:  1280px;
-    min-height: 300px;
-    display: flex;
-    justify-content: space-between;
-    color: azure;
-    text-align: center;
-    padding-bottom: 0px;
-    margin-bottom: 50px;
-    align-items: center;
-    margin: auto;    
-}
-.card1 {
+
+.cardtop {
     /* background-color: azure; */
     background-image: url(images/diamondback.jpg);
     /* background-size: cover; */
     background-position: bottom;
     /* min-height: 300px; */
-    width: 30%;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-}
-.card2 {
-    /* background-color: rgb(126, 41, 86); */
-    background-image: url(images/diamondback.jpg);
-    /* background-size: cover; */
-    background-position: bottom;
-    /* min-height: 300px; */
-    width: 30%;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-}
-.card3 {
-    /* background-color: rgb(43, 13, 29); */
-    background-image: url(images/diamondback.jpg);
-    /* background-size: cover; */
-    background-position: bottom;
-    /* min-height: 300px; */
-    width: 30%;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-}
-.subcard1 {
-    background-color: azure;
-    color:black;
-    /* padding-top: 1rem; */
-    /* padding-bottom: 1rem; */
-    /* height: auto; */
-}
-.subcard2 {
-    background-color: azure;
-    color:black;
-    /* padding-top: 1rem; */
-    /* padding-bottom: 1rem; */
-}
-.subcard3 {
-    background-color: azure;
-    color:black;
-    /* padding-top: 1rem; */
-    /* padding-bottom: 1rem; */
-}
-.cards p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin: 10px 30px 20px 0px;
-}
-.cards a {
+    width: 100%;
     color: azure;
-    text-decoration: none;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3), -5px -5px 10px rgba(255,255,255,0.5);
+    padding-bottom: 5px;
+    margin-bottom: 0px;
 }
-.subcard1, .subcard2, .subcard3 {
-    padding: 15px 10px 10px 15px;
-    /* box-sizing: border-box; */
-}
+
+    @keyframes fade-in-on-scroll {
+        from { 
+            
+            transform: translateX(100px); 
+        
+        }
+        to { 
+            
+            transform: translateX(0); 
+        }
+    }
+
+    .rowfadeRight {
+        animation: fade-in-on-scroll;
+        animation-duration: auto;
+        animation-timeline: view(); /* or scroll(root block) */
+        animation-range: entry 0% cover 50%; /* Adjust range as needed */
+    }
+
+    @keyframes fade-in-on-scroll2 {
+        from { 
+           
+            transform: translateX(-100px); 
+        
+        }
+        to { 
+         
+            transform: translateX(0); 
+        }
+    }
+
+    .rowfadeLeft {
+        animation: fade-in-on-scroll2;
+        animation-duration: auto;
+        animation-timeline: view(); /*or scroll(root block)  */
+        animation-range: entry 0% cover 50%; 
+    }
+
 i {
     font-size: 125px;
     color: azure;
     padding-top: 3rem;
 }
-.container3 {
-    /* background-color: blueviolet; */
-    min-height: 350px;
-    max-width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    text-align: center;
-    padding-bottom: 0px;
-    margin-bottom: 75px;
-}
-.col {
-    /* background-color:rgb(38, 105, 105); */
-    min-height: 350px;
-    width: 28%;
-    margin-bottom: 0px;
-    border: solid 10px #89bd88;
-    border-radius: 180%;
-    box-shadow: 0px 10px 10px black;
-}
-.col h2 {
-    color: black;
-    font-size: 2rem;
-    /* font-weight: bold; */
-    line-height: 2.5rem;
-    margin-top: 1.5rem;
-    /* margin-bottom: 1rem; */
-    text-shadow: 5px 5px 5px rgba(240, 255, 255, 0.562);
-    text-align: center;
-}
+
 .container4 {
     min-height: 300px;
     background-color: #89bd88;
@@ -302,17 +264,11 @@ i {
     padding: 3rem 2rem;
     margin-bottom: 40px;
 }
-.container4 h1 {
-    font-size: 4rem;
-    line-height: 4.5rem;
-    box-sizing: border-box;
-}
 .container4 p {
-    text-align: right;
-    line-height: 1rem;
-    font-size: 1rem;
+    line-height: 50%;
     font-style: italic;
 }
+
 .container5 {
     /* background-color: blueviolet; */
     max-width: 1280px;
@@ -496,6 +452,12 @@ td {
 
     /* margin: 1px;    */
 }
+.aboutbox1 ul {
+    line-height: 1.75rem;
+}
+.aboutbox4 ul {
+    line-height: 1.75rem;
+}
 .aboutbox5 {
     background-image: url(images/autonomy.jpg);
     background-size: cover;
@@ -548,6 +510,7 @@ a.email:hover {
     padding: 20px;
 }
 
+
 /* About View */
 @media (max-width: 900px) {
     
@@ -587,24 +550,24 @@ a.email:hover {
 /* Tablet View */
 @media (max-width: 768px) {
     
-        header {
+        /* header {
             display: block;
             text-align: center;
             padding-bottom: 0px;
-        }
-        nav {
+        } */
+        /* nav {
         background-color: #89bd88;
-        }
-        nav a {
+        } */
+        /* nav a {
             display: block;
-        }
-        .mybutton {
+        } */
+        /* .mybutton {
             background-color: #89bd88;
-        }
-        .headerbox1 h1 {
+        } */
+        /* .headerbox1 h1 {
             font-size: 2.5rem;
             line-height: 3rem;
-        }
+        } */
     
         .container2 {
             display: block;
@@ -619,14 +582,14 @@ a.email:hover {
             text-align: center;
             padding-top: 10px;
         }
-        nav a.navbutton {
+        /* nav a.navbutton {
             margin-left: 0px;  
-        }
+        } */
         .headline h1 {
             font-size: 3rem;
             line-height: 3.5rem;
         }
-        .cards {
+        /* .cards {
             display: block;
         }
         .card1 {
@@ -644,12 +607,12 @@ a.email:hover {
         .container3 {
             display: block;
         }
-        .col {
+        .coll {
             width: 48%;
             margin: auto;
             margin-top: 15px;
             margin-bottom: 30px;
-        }
+        } */
         .container4 h1 {
             font-size: 3rem;
             line-height: 3.5rem;
@@ -689,12 +652,12 @@ a.email:hover {
         .headerbox1 h1 {
             font-size: 1.75rem;
             line-height: 2rem;
-        }
+        } 
         .headline h1 {
             font-size: 2.3rem;
             line-height: 3rem;
         }
-        .card1 {
+        /* .card1 {
             width: 100%;
         }
     
@@ -704,15 +667,15 @@ a.email:hover {
     
         .card3 {
             width: 100%;
-        }
+        } */
     
-        .col {
+        /* .col {
             width: 80%;
         }
     
         .col h2 {
             font-size: 1.75rem;
-        }
+        } */
     
         .container4 h1 {
             font-size: 2rem;
