@@ -649,6 +649,9 @@ a.email:hover {
         nav a {
             display: block;
         }
+        .headerbox1 {
+        width: 60%;
+       }
         .headerbox1 h1 {
             font-size: 1.5rem;
             line-height: 1.75rem;
@@ -658,7 +661,7 @@ a.email:hover {
             line-height: 3rem;
         }
         .mybutton {
-            font-size: 1rem;
+            font-size: .75rem;
         }
         /* .card1 {
             width: 100%;
@@ -702,7 +705,7 @@ a.email:hover {
         }
     
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
         }
          td {
             font-size: x-small;
@@ -710,6 +713,9 @@ a.email:hover {
         .margin-right-b {
             margin-right: 0px;
         }
-
+        a.email{
+            font-size: 1rem;
+        }
     }
+
 
