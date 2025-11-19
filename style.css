@@ -26,6 +26,10 @@ h1 {
 
     
 } */
+nav {
+    background-color: azure;
+}
+
 .navbar-toggler:focus {
     box-shadow: none;
     border: solid 2px;
