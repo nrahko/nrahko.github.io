@@ -308,11 +308,19 @@ i {
     padding-bottom: 1rem;
     text-shadow: 5px 5px 5px rgba(240, 255, 255, 0.562); 
 }
+.col2:hover {  
+  transform: scale(1.2); 
+  transition: transform 0.5s ease; 
+}
 .col2 p {
     /* color: #89bd88; */
     padding-top: 15px;
     font-size: 2rem;
     font-weight: bold;   
+}
+.col2 a {
+    text-decoration: none;
+    color: black;
 }
 .container6 {
     /* background-color: blueviolet; */
@@ -513,7 +521,6 @@ a.email:hover {
     font-size: smaller;
     padding: 20px;
 }
-
 
 /* About View */
 @media (max-width: 900px) {
