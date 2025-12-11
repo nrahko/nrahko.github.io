@@ -338,6 +338,10 @@ i {
     width: 30%;
     margin-bottom: 40px;
 }
+.col3 a :hover {  
+  transform: scale(1.2); 
+  transition: transform 0.5s ease; 
+}
 .container6 i {
     font-size: 100px;
     color: azure;
