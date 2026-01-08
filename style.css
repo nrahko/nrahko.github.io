@@ -272,7 +272,31 @@ i {
     line-height: 50%;
     font-style: italic;
 }
+ /* .swiper {
+      width: 100%;
+      height: 100%;
+    } */
 
+    /* .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } */
+
+    .swiper-slide img {
+      max-height: 550px;
+    } 
+
+.swiper {
+      margin-left: auto;
+      margin-right: auto;
+}
+.swiper-button-next, .swiper-button-prev, .swiper-pagination {
+    color: black;
+} 
 .container5 {
     /* background-color: blueviolet; */
     max-width: 1280px;
@@ -604,6 +628,9 @@ a.email:hover {
             font-size: 3rem;
             line-height: 3.5rem;
         }
+        .swiper-button-next, .swiper-button-prev {
+         display: none;
+        } 
         /* .cards {
             display: block;
         }
