@@ -553,6 +553,9 @@ a.email:hover {
     font-size: smaller;
     padding: 20px;
 }
+.container-mobile-ad {
+            display:none;
+        }
 
 /* About View */
 @media (max-width: 900px) {
@@ -677,8 +680,14 @@ a.email:hover {
         h2 {
             font-size: 1.5rem;
         }
-            .margin-right-b {
+        .margin-right-b {
             margin-right: 1px;
+        }
+        .container-desktop-ad {
+            display:none;
+        }
+        .container-mobile-ad {
+            display:block;
         }
      }
 /* Mobile view */
