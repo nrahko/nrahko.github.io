@@ -44,17 +44,23 @@
         <i class="fa-regular fa-circle-xmark"></i>
       </div> 
   </button>
-  <ul class="navbar-nav ms-lg-auto p-4 p-lg-0">
-  <li class="nav-item px-3 px-lg-0 py-1 py-lg-4">
+  <ul class="navbar-nav ms-lg-auto">
+  <li class="nav-item pt-lg-3">
           <a class="nav-link text-center" href="about.html">ABOUT</a>
         </li>
-     <li class="nav-item px-3 px-lg-0 py-1 py-lg-4">
-          <a class="nav-link text-center" href="blog.html">INSIGHTS</a>
+     <li class="nav-item dropdown pt-lg-3">
+      <a class="nav-link text-center dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            INSIGHTS
+          </a>
+     <ul class="dropdown-menu border border-dark border-2">     
+          <li><a class="nav-link text-center" href="blog.html">TECH BLOG</a></li>
+          <li><a class="nav-link text-center" href="newsfeed.html">NEWSFEED</a></li>
+     </ul>
         </li>        
-   <li class="nav-item px-3 px-lg-0 py-1 py-lg-4">
+   <li class="nav-item pt-lg-3">
           <a class="nav-link text-center" href="/#contact">CONTACT</a>
         </li> 
-    <li class="nav-item px-3 px-lg-0 py-1 py-lg-4">
+    <li class="nav-item">
               <form class="d-flex" action="searchresults.html" method="GET" id="searchForm">
         <input class="form-control me-2" type="text" name="query" id="searchInput" placeholder="Search" aria-label="Search"/>
         <button class="btn btn-outline-light" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -64,8 +70,7 @@
 </div>
 
 </div>
-</nav>
- 
+</nav> 
 <div class="container1 about">
 
     <div class="headerbox1">
