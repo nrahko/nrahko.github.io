@@ -68,7 +68,7 @@ nav i {
     background-size: cover; 
     /* background-position: center; */
     width: 100%;
-    min-height: 550px;
+    min-height: 500px;
     /* max-width: 1024px; */
     /* margin: 0 auto; */
     /* flex-wrap: wrap; */
@@ -84,6 +84,9 @@ nav i {
 }
 .blog {
     background-image: url(images/blogback1.jpg);
+}
+.newsfeed {
+     background-image: url(images/newsfeed.jpg);
 }
 .headerbox1 {
     background-color: azure;
