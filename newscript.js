@@ -100,7 +100,7 @@ function displayNews(stories) {
     grid.innerHTML = stories.map(story => `
         <div class="news-card" onclick="window.open('${story.link}', '_blank')">
             <div class="news-image" style="background-image: url('${story.image}')">
-                ${story.image === GENERIC_IMAGE ? '<div class="generic"><img src="images/eblackdiamond.png" alt="eBlackDiamond Newsfeed"></div>' : ''}
+                ${story.image === GENERIC_IMAGE ? '<div class="generic"><img src="images/newsfeed.png" alt="eBlackDiamond Newsfeed"></div>' : ''}
                 <div class="source-badge" style="background: ${story.sourceColor}aa; color: white;">${story.source}</div>
             </div>
             <div class="news-content">
