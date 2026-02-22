@@ -13,7 +13,7 @@ const RSS_FEEDS = [
 
 const GENERIC_IMAGE = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=150&q=80';
 const CACHE_KEY = 'daily_news_cache_et';
-const CACHE_EXPIRY = 2 * 60 * 1000; // 120000 ms (2 minutes)
+const CACHE_EXPIRY = 5 * 60 * 1000; // 150000 ms (5 minutes)
 
 async function fetchFeed(feed) {
     try {
@@ -43,7 +43,7 @@ async function loadNews() {
     const status = document.getElementById('status');
 
     refreshBtn.disabled = true;
-    refreshBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+    refreshBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Please wait...';
     grid.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-spin"></i> Fetching from 10 sources...</div>';
 
     try {
