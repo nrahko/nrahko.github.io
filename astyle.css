@@ -29,7 +29,7 @@
 
         /* ============ HEADER ============ */
         header {
-            background: linear-gradient(135deg, var(--dark) 0%, #232f3e 100%);
+             background: linear-gradient(135deg, var(--dark) 0%, #232f3e 100%);
             color: white;
             text-align: center;
             padding: 3rem 1.5rem;
@@ -69,14 +69,25 @@
             font-size: 1.1rem;
             opacity: 0.8;
             position: relative;
-            max-width: 500px;
+            max-width: 750px;
             margin: 0 auto;
         }
+
+    .date-display {
+        /* font-family: Arial, sans-serif; */
+        font-size: 24px;
+        color: white;
+        opacity: 0.8;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 0.75rem;
+          }
+    /* Add or modify any styles you want here */
         /* ============ MAIN ============ */
         .container-affiliate {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2.5rem 1.5rem 4rem;
+            padding: 2.5rem 1.5rem 2rem;
         }
 
         .affiliate-notice {
@@ -90,7 +101,9 @@
             max-width: 700px;
             margin: 0 auto 2rem;
         }
-
+        .affiliate-notice a {
+             color: #8a6d3b;
+        }
         /* ============ PRODUCT GRID ============ */
         .product-grid {
             display: grid;
@@ -123,6 +136,7 @@
             transform: translateY(30px);
             animation: fadeInUp 0.6s ease forwards;
         }
+
 
         .product-card:nth-child(1) { animation-delay: 0.1s; }
         .product-card:nth-child(2) { animation-delay: 0.2s; }
@@ -296,13 +310,51 @@
             transform: translateX(3px);
         }
 
+
+        .active>.page-link, .page-link.active {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            color: white;
+        }
+        .page-link {
+            color: black;
+            text-decoration: none;
+        }
+        .page-link:hover {
+            color: var(--primary);
+            background-color: #ffe0b2;
+        }
+        .active>.page-link, .page-link.active:hover {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            color: white;
+        }
+
         /* ============ FOOTER ============ */
         footer {
-            text-align: center;
-            padding: 2rem 1.5rem;
             background: var(--dark);
             color: rgba(255,255,255,0.5);
-            font-size: 0.85rem;
+            padding: 2.5rem 1.5rem 2rem;
+        }
+
+        .footer-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: white;
+        }
+
+        .footer-logo span {
+            color: var(--primary);
         }
 
         footer a {
