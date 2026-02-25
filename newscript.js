@@ -56,7 +56,7 @@ async function loadNews() {
                 status.textContent = `Cached: ${new Date(data.timestamp).toLocaleString('en-US', { timeZone: 'America/New_York' })} ET (${data.stories.length} stories)`;
                 status.className = 'status warning';
                 refreshBtn.disabled = false;
-                refreshBtn.innerHTML = '<i class="fas fa-sync-alt"></i> Refresh Now (20 Stories)';
+                refreshBtn.innerHTML = '<i class="fas fa-sync-alt"></i> Refresh Now (15 Stories)';
                 return;
             }
         }
@@ -72,7 +72,7 @@ async function loadNews() {
         const uniqueStories = allStories
             .filter(story => !seen.has(story.title + story.source) && seen.add(story.title + story.source))
             .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate))
-            .slice(0, 20);
+            .slice(0, 15);
 
         const newsData = { stories: uniqueStories, timestamp: now };
         localStorage.setItem(CACHE_KEY, JSON.stringify(newsData));
@@ -87,7 +87,7 @@ async function loadNews() {
         console.error('Load error:', error);
     } finally {
         refreshBtn.disabled = false;
-        refreshBtn.innerHTML = '<i class="fas fa-sync-alt"></i> Refresh Now (20 Stories)';
+        refreshBtn.innerHTML = '<i class="fas fa-sync-alt"></i> Refresh Now (15 Stories)';
     }
 }
 
