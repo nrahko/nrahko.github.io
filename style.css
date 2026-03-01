@@ -154,6 +154,17 @@ a.mybutton {
     text-decoration: none;
     text-align: center;
 }
+
+.TechPicksAd-lg {
+    display: block;
+    text-align: center;
+    padding: .5rem;
+}
+.TechPicksAd-sm {
+    display: none;
+}
+
+
 .container2 {
     /* background-color: rgb(49, 177, 59); */
     max-width: 1280px;
@@ -625,7 +636,14 @@ a.email:hover {
             font-size: 2.5rem;
             line-height: 3rem;
         } */
-    
+    .TechPicksAd-lg {
+        display: none;
+     }
+    .TechPicksAd-sm {
+        display: block;
+        text-align: center;
+        padding: .5rem;
+            }
         .container2 {
             display: block;
         }
