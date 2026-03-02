@@ -111,6 +111,15 @@
             gap: 2rem;
         }
 
+            .TechPicksAd-lg {
+                display: none;
+            }
+            .TechPicksAd-sm {
+                display: block;
+                text-align: center;
+                padding: .5rem;
+            }
+
         @media (min-width: 640px) {
             .product-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -120,6 +129,14 @@
         @media (min-width: 1024px) {
             .product-grid {
                 grid-template-columns: repeat(3, 1fr);
+            }
+            .TechPicksAd-lg {
+                display: block;
+                text-align: center;
+                padding: .5rem;
+            }
+            .TechPicksAd-sm {
+                display: none;
             }
         }
 
@@ -241,6 +258,24 @@
             color: var(--primary-dark);
             margin-bottom: 0.75rem;
         }
+       
+        .price-trend {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-left: 15px;
+        }
+
+        .arrow-up {
+            color: red;
+            /* font-size: 0.8rem; */
+            margin-left: 5px; 
+        }
+        .arrow-down {
+            color: green;
+            /* font-size: 0.8rem; */
+            margin-left: 5px;
+        }
+    
 
         .prime-badge {
             display: inline-flex;
