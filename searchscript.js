@@ -9,7 +9,16 @@ const pagesToSearch = [
   "spotlight_cloudflare.html",
   "spotlight_shopify.html",
   "tech_article.html",
-  "newsfeed.html"
+  "newsfeed.html",
+  "tpbuyersguide.html",
+  "techpick.html",
+  "a-laptops.html",
+  "a-desktops.html",
+  "a-tablets.html",
+  "a-printers.html",
+  "a-chromebooks.html",
+  "a-accessories.html",
+  "a-accessories-2.html",
 ];
 
 // 1. Get the search term from the URL
