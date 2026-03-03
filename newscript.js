@@ -1,11 +1,11 @@
 const RSS_FEEDS = [
     { rssUrl: 'https://moxie.foxnews.com/feedburner/latest.xml', source: 'Fox News', color: '#ee0000' },
-    { rssUrl: 'https://www.breitbart.com/feed/', source: 'Breitbart', color: '#000000' },
+    { rssUrl: 'https://www.breitbart.com/feed/', source: 'Breitbart', color: '#666161' },
     { rssUrl: 'https://www.espn.com/espn/rss/news', source: 'ESPN', color: '#0072bb' },
-    { rssUrl: 'https://www.newsweek.com/feed', source: 'Newsweek', color: '#0054a6' },
+    { rssUrl: 'https://www.pbs.org/newshour/feeds/rss/headlines', source: 'PBS', color: '#0054a6' },
     { rssUrl: 'http://feeds.bbci.co.uk/news/rss.xml', source: 'BBC', color: '#bb1d1d' },
     { rssUrl: 'http://rss.cnn.com/rss/edition.rss', source: 'CNN', color: '#a6192e' },
-    { rssUrl: 'https://feeds.reuters.com/reuters/topNews', source: 'Reuters', color: '#005566' },
+    { rssUrl: 'https://feeds.nbcnews.com/nbcnews/public/news', source: 'NBC News', color: '#005566' },
     { rssUrl: 'https://feeds.npr.org/1001/rss.xml', source: 'NPR', color: '#e32c27' },
     { rssUrl: 'https://www.theguardian.com/uk/rss', source: 'Guardian', color: '#056da0' },
     { rssUrl: 'https://rss.cbc.ca/lineup/topstories.xml', source: 'CBC', color: '#c8102e' }
@@ -72,7 +72,7 @@ async function loadNews() {
         const uniqueStories = allStories
             .filter(story => !seen.has(story.title + story.source) && seen.add(story.title + story.source))
             .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate))
-            .slice(0, 15);
+            .slice(0, 18);
 
         const newsData = { stories: uniqueStories, timestamp: now };
         localStorage.setItem(CACHE_KEY, JSON.stringify(newsData));
@@ -87,7 +87,7 @@ async function loadNews() {
         console.error('Load error:', error);
     } finally {
         refreshBtn.disabled = false;
-        refreshBtn.innerHTML = '<i class="fas fa-sync-alt"></i> Refresh Now (15 Stories)';
+        refreshBtn.innerHTML = '<i class="fas fa-sync-alt"></i> Refresh Now (18 Stories)';
     }
 }
 
