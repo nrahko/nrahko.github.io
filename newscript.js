@@ -4,7 +4,7 @@ const RSS_FEEDS = [
     { rssUrl: 'https://www.espn.com/espn/rss/news', source: 'ESPN', color: '#0072bb' },
     { rssUrl: 'https://www.pbs.org/newshour/feeds/rss/headlines', source: 'PBS', color: '#0054a6' },
     { rssUrl: 'http://feeds.bbci.co.uk/news/rss.xml', source: 'BBC', color: '#bb1d1d' },
-    { rssUrl: 'http://rss.cnn.com/rss/edition.rss', source: 'CNN', color: '#a6192e' },
+    // { rssUrl: 'http://rss.cnn.com/rss/edition.rss', source: 'CNN', color: '#a6192e' },
     { rssUrl: 'https://feeds.nbcnews.com/nbcnews/public/news', source: 'NBC News', color: '#005566' },
     { rssUrl: 'https://feeds.npr.org/1001/rss.xml', source: 'NPR', color: '#e32c27' },
     { rssUrl: 'https://www.theguardian.com/uk/rss', source: 'Guardian', color: '#056da0' },
@@ -13,7 +13,7 @@ const RSS_FEEDS = [
 
 const GENERIC_IMAGE = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=150&q=80';
 const CACHE_KEY = 'daily_news_cache_et';
-const CACHE_EXPIRY = 5 * 60 * 1000; // 150000 ms (5 minutes)
+const CACHE_EXPIRY = 10 * 60 * 1000; // 600000 ms (10 minutes)
 
 async function fetchFeed(feed) {
     try {
