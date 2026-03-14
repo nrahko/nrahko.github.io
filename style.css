@@ -27,9 +27,7 @@ h1 {
 } */
 /* .nav-link {
     font-weight: 600;
-    border: solid 1px;
-
-    
+    border: solid 1px;  
 } */
 nav {
     background-color: azure;
@@ -160,6 +158,22 @@ a.mybutton {
     text-align: center;
     padding: .5rem;
 }
+
+/* Ad style */
+.ad-banner {
+    max-width: 728px; height: 90px; margin: 0 auto 0px; border: 1px solid #ddd; border-radius: 8px;
+    background: #fff; overflow: hidden; position: relative; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+.ad-banner img { width: 100%; height: 100%; object-fit: cover; }
+.ad-banner iframe { border: none; width: 100%; height: 100%; }
+.ad-label { 
+            position: absolute; top: 5px; right: 10px; background: rgba(0,0,0,0.7); color: #fff; 
+            font-size: 11px; padding: 2px 6px; border-radius: 4px; z-index: 10;
+        }
+.loading { padding: 40px; color: #999; font-size: 18px; }
+.info { color: #666; font-size: 14px; margin-top: 20px; }
+
+
 .TechPicksAd-sm {
     display: none;
 }
@@ -546,6 +560,25 @@ td {
     padding-top: 25px;
     color: black;
 } 
+
+.active>.page-link, .page-link.active {
+            background-color: darkgrey;
+            border-color: azure;
+            color: black;
+        }
+        .page-link {
+            color: black;
+            text-decoration: none;
+        }
+        .page-link:hover {
+            color: azure;
+            background-color: #89bd88;
+        }
+        .active>.page-link, .page-link.active:hover {
+            background-color: darkgrey;
+            border-color: azure;
+            color: black;
+        }
 a.email{
     color: #aa1f24c0;
     text-decoration: none;
